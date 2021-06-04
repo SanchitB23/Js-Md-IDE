@@ -42,7 +42,7 @@ build/Release
 node_modules/
 jspm_packages/
 packages/scripts/node_modules
-#packages/api/node_modules
+packages/api/node_modules
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -118,3 +118,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+#project files
+temp.js
