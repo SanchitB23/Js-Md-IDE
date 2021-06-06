@@ -120,3 +120,5 @@ dist
 
 #project files
 temp.js
+build
+node_modules

@@ -1,5 +1,6 @@
 import {Command} from "commander";
-import {serve} from "api";
+// @ts-ignore
+import {serve} from "@js-md-ide/api";
 import path from "path";
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -20,7 +21,5 @@ export const serveCommand = new Command()
                 console.log(('Port is in use, try running on different Port'))
             else console.log('Here\'s the problem - ', e.message)
             process.exit(1)
-        } finally {
-            console.log(`Running in ${process.env.NODE_ENV} environment`)
         }
     })

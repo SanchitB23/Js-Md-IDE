@@ -1,14 +1,21 @@
 {
-  "name": "api",
+  "name": "@js-md-ide/api",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc --watch --preserveWatchOutput"
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "tsc"
   },
-  "author": "",
+  "author": "sanchitb23",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.10",
@@ -17,7 +24,7 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "client": "^0.1.0",
+    "@js-md-ide/client": "^0.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-proxy-middleware": "^2.0.0"
